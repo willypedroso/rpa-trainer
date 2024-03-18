@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPA Trainer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>RPA Trainer</h1>
+    </header>
+    <a id="download" href="./data.xlsx">Download file</a>
+    <button id="instructionsBtn" onclick="openInstructions()">Instructions</button>
+    <main>
+        <div id="instructions"><h3>Instructions</h3>Download the worksheet in the "Download file" button and then use the data in the file to fill the fields correctly in the form below.</div>
+        <h3>Insert Employees</h3>
+        <h5 id="count">1/30</h5>
+        <form>
+            <div style="display: flex; flex-direction: column; gap: 10px; align-items: flex-end;">
+                <label for="name">Name: <input type="text"></label>
+                <label for="age">Age: <input type="text"></label>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 10px; align-items: flex-end;">
+                <label for="company">Company: <input type="text"></label>
+                <label for="job">Job: <input type="text"></label>
+            </div>
+        </form>
+        <button onclick="submit()">Submit</button>
+        <div id="result"></div>
+    </main>
+    <footer style="text-align: center;">Develop by <a href="https://github.com/willypedroso">Will Pedroso</a></footer>
+</body>
+<script src="initialSettings.js"></script>
+<script src="baseData.js"></script>
+<script src="instructionsHandler.js"></script>
+<script src="resultHandler.js"></script>
+<script src="formHandler.js"></script>
+</html>

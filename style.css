@@ -1,0 +1,116 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace
+}
+
+body{
+    background-color: rgb(206, 139, 14);
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100px;
+    background-color: black;
+    color: white;
+    border: 1px solid rgb(224, 224, 224);
+    box-shadow: 6px 6px 6px black;
+    cursor: context-menu;
+}
+
+#download{
+    position: fixed;
+    top: 120px;
+    left: 20px;
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    background-color: lightblue;
+    border: 1px solid black;
+    box-shadow: 3px 3px 3px;
+}
+
+#instructionsBtn{
+    position: fixed;
+    top: 160px;
+}
+
+#download:active{
+    box-shadow: none;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    font-size: 2rem;
+    gap: 50px;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+input{
+    height: 2rem;
+    width: 20rem;
+    padding: 10px;
+}
+
+button{
+    padding: 15px;
+    background-color: lightblue;
+    box-shadow: 3px 3px 3px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+button:active{
+    box-shadow: none;
+}
+
+#instructions{
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    text-align: center;
+    max-width: 600px;
+    padding: 30px;
+    border: 2px solid black;
+}
+
+#result{
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    text-align: center;
+    max-width: 600px;
+    padding: 30px;
+    border: 2px solid black;
+}
+
+footer a{
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
